@@ -7,7 +7,7 @@ const eqArrays = function(arr1, arr2) {
   let str2 = arr2.toString();
   let match = true;
   for (let i = 0; i < str1.length; i++) {
-    str1[i] !== str2[i] ? match = false : ''
+    str1[i] !== str2[i] ? match = false : '';
   }
   return match;
 };
