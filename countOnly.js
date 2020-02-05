@@ -5,9 +5,9 @@ const assertEqual = function(actual, expected) {
 
 const countOnly = function(allItems, itemsToCount) {
   let results = {};
-  allItems.forEach(x => !results[x] ? results[x] = 1 : results[x]++)
-  return results
-}
+  allItems.forEach(x => !results[x] ? results[x] = 1 : results[x]++);
+  return results;
+};
 
 const firstNames = [
   "Karl",
