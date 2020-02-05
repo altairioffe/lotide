@@ -17,5 +17,7 @@ const flatten = function(arr) {
   }
   return result;
 };
-
-console.log(flatten([0, 1, 2, [3, 4]]))
+//TEST CODE:
+assertArraysEqual(eqArrays(flatten([0, 1, 2, [3, 4]]), [0, 1, 2, 3, 4]), true); //should PASS
+assertArraysEqual(eqArrays(flatten([[0, 1], 2, [3, 4]]), [0, 1, 2, 3, 4]), true); //should PASS
+assertArraysEqual(eqArrays(flatten([[0, 1], 3, [3, 4]]), [0, 1, 2, 3, 4]), true); //should FAIL
