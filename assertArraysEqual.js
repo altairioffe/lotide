@@ -1,10 +1,9 @@
-
-const eqArrays = function(arr1, arr2) {
-  let match;
-  for (let i = 0; i < arr1.toString().length; i++) {
-    arr1.toString()[i] !== arr2.toString()[i] ? match = false : '';
+const eqArrays = function (arr1, arr2) {
+  if (arr1.length !== arr2.length) return false;
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) return false;
   }
-  return match === false ? false : true;;
+  return true;
 };
 
 const assertArraysEqual = function(actual, expected) {
