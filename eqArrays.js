@@ -1,7 +1,3 @@
-// const assertEqual = function(actual, expected) {
-//   actual === expected ? console.log(`🥳🥳🥳 Assertion Passed: ${actual} === ${expected}`) : console.log(`💩💩💩 Assertion Failed: ${actual} !== ${expected}`);
-// };
-
 const eqArrays = function(arr1, arr2) {
   let match;
   for (let i = 0; i < arr1.length; i++) {
