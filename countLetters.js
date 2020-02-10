@@ -4,4 +4,7 @@ const countLetters = function(sentence) {
   arr.forEach(x => !results[x] ? results[x] = 1 : results[x]++);
   return results;
 };
-console.log(countLetters("lighthouse in the house"));
+
+module.exports = countLetters;
+
+// console.log(countLetters("lighthouse in the house"));

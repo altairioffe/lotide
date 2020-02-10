@@ -9,6 +9,8 @@ const map = function(arr, cb) {
   return results;
 };
 
-// TEST CODE
-const words = [1, 2, 3, 4];
-assertArraysEqual(eqArrays(map(words, x => x + 2), [3, 4, 5, 6]), true);
+module.exports = map;
+
+// // TEST CODE
+// const words = [1, 2, 3, 4];
+// assertArraysEqual(eqArrays(map(words, x => x + 2), [3, 4, 5, 6]), true);
