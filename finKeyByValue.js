@@ -7,13 +7,13 @@ const findKeyByValue = function(obj, value) {
   for (let key in obj) {
     obj[key] === value ? result = key : '';
   }
-   return result;
+  return result;
 };
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+  drama: "The Wire"
 };
 
 assertEqual(console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));

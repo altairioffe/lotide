@@ -8,10 +8,8 @@ const map = function(arr, cb) {
   return results;
 };
 
-let test = words.map(x => x + 2)
-
 // TEST CODE
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) return false;
@@ -23,4 +21,4 @@ const assertArraysEqual = function(actual, expected) {
   actual === expected ? console.log(`🥳🥳🥳 Assertion Passed: ${actual} === ${expected}`) : console.log(`💩💩💩 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-assertArraysEqual(eqArrays(words.map(x => x + 2), [3, 4, 5, 6 ]), true);
+assertArraysEqual(eqArrays(map(words, x => x + 2), [3, 4, 5, 6]), true);

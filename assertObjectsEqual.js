@@ -1,5 +1,3 @@
-
-
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect;
   
@@ -12,7 +10,7 @@ const assertObjectsEqual = function (actual, expected) {
         }
       } else {
         if (expected[key] !== actual[key]) {
-          return false
+          return false;
         }
       }
     }
@@ -26,7 +24,6 @@ const assertObjectsEqual = function (actual, expected) {
     }
     return true;
   };
-  //console.log(eqObjects(actual, expected));
   if (eqObjects(actual, expected) === true) {
     console.log(`🥳🥳🥳 PASS: ${inspect(actual)} === ${inspect(expected)}`);
   } else { 

@@ -3,8 +3,6 @@ const assertEqual = function (actual, expected) {
 };
 
 const eqArrays = function (arr1, arr2) {
-  console.log(arr1)
-  console.log(arr2)
 
   if (arr1.length !== arr2.length) return false;
   for (let i = 0; i < arr1.length; i++) {
@@ -14,21 +12,22 @@ const eqArrays = function (arr1, arr2) {
 };
 
 const eqObjects = function (object1, object2) {
-  //console.log(Object.keys(object2))
+
   if (Object.keys(object1).length !== Object.keys(object2).length) return false;
-  for (key in object1) {
+  for (let key in object1) {
     if (Array.isArray(object1[key])) {
       if (eqArrays(object1[key], object2[key]) === false) {
         return false;
       }
     } else {
       if (object2[key] !== object1[key]) {
-        return false
+        return false;
       }
     }
   }
   return true;
 };
+
 //TEST CODE:
 const ab = { a: "1", b: '2' };
 const ba = { b: "2", a: "1" };
