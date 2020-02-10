@@ -1,6 +1,3 @@
-const eqArrays = require('./eqArrays');
-const assertEqual = require('./assertEqual');
-
 const letterPositions = function(sentence) {
   let results = {};
   let arr = Array.from(sentence); // uncomment to filter out spaces // .filter(x => x !== ' ');
@@ -11,4 +8,3 @@ const letterPositions = function(sentence) {
 };
 
 module.exports = letterPositions;
-// console.log(letterPositions('hello low'));
